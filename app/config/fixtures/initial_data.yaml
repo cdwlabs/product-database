@@ -1,8 +1,7 @@
 - model: config.textblock
   pk: 1
   fields: {name: Homepage text before favorite actions, html_content: "<p>This database
-      contains information about network equipment like routers and switches from
-      multiple vendors.</p>"}
+      contains End of Life information for devices supported by CDW Managed Services.</p>"}
 - model: config.textblock
   pk: 2
   fields: {name: Homepage text after favorite actions, html_content: "<p>\r\n    <small>\r\n
