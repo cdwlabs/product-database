@@ -35,8 +35,9 @@ WS-C3850-24P-S</pre>
                     {% bootstrap_field form.migration_source layout="horizontal" %}
                 {% endif %}
                 {% bootstrap_field form.input_product_ids layout="horizontal" %}
-                {% bootstrap_field form.public_product_check layout="horizontal" %}
-                {% bootstrap_field form.is_cisco_show_inventory_output layout="horizontal" %}
+                {# Fields disabled for CAI-50 #}
+                {# {% bootstrap_field form.public_product_check layout="horizontal" %} #}
+                {# {% bootstrap_field form.is_cisco_show_inventory_output layout="horizontal" %} #}
 
                 {% buttons %}
                     <button type="submit" id="submit" class="btn btn-primary btn-block">Create Product Check</button>
