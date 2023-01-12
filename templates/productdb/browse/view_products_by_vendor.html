@@ -350,10 +350,12 @@
                             orthogonal: "export"
                         }
                     },
+                    /* Commented for CAI-48
                     {
                         extend: "colvis",
                         text: 'show additional columns <i class="fa fa-angle-down"></i>'
                     }
+                    */
                 ],
                 "ajax": "{% url 'productdb:datatables_vendor_products_view' %}" + vs.val() + "/"
             });
