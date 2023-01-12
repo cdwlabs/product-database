@@ -53,6 +53,7 @@
                                     All Product Checks
                                 </a>
                             </li>
+                            {% if user.is_superuser %}
                             <li class="divider"></li>
                             <li>
                                 <a href="{% url 'productdb_config:notification-list' %}">
@@ -60,6 +61,7 @@
                                     Recent Notifications
                                 </a>
                             </li>
+                            {% endif %}
                         </ul>
                     </li>
                     <li role="presentation">
