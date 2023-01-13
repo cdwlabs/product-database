@@ -15,12 +15,13 @@
     </div>
 
     {% bootstrap_messages %}
-
+    <!-- Commented for CAI-47
     <p>
         On this page, you can view all products that are stored in the database.
         <a href="javascript:browse_all_database_help()"><i class="fa fa-info-circle"></i> Click here</a> to get a quick introduction.
         You can also search <a href="{% url 'productdb:browse_vendor_products' %}"><i class="fa fa-search"></i>&nbsp;by vendor in the database</a>.
     </p>
+    -->
     {% include "productdb/_components/search_function_info_with_config_link.html" %}
     <hr>
     <div class="col-md-12">
