@@ -240,27 +240,28 @@
                 "stateSave": true,
                 "columnDefs": [
                     { "targets": 0, "visible": true, "searchable": true },
-                    { "targets": 3, "visible": false, "searchable": true },
+                    { "targets": 3, "visible": true, "searchable": true },
                     { "targets": 4, "visible": false, "searchable": true },
-                    { "targets": 8, "visible": false, "searchable": true },
-                    { "targets": 9, "visible": false, "searchable": true },
-                    { "targets": 10, "visible": false, "searchable": true },
-                    { "targets": 11, "visible": false, "searchable": true },
-                    { "targets": 12, "visible": false, "searchable": true },
-                    { "targets": 13, "visible": false, "searchable": true },
-                    { "targets": 14, "visible": false, "searchable": true },
-                    { "targets": 15, "visible": false, "searchable": true },
-                    { "targets": 16, "visible": false, "searchable": true },
-                    { "targets": 17, "visible": false, "searchable": true },
-                    { "targets": 18, "visible": false, "searchable": true },
-                    { "targets": 19, "visible": false, "searchable": true,
+                    { "targets": 8, "visible": true, "searchable": true },
+                    { "targets": 9, "visible": true, "searchable": true },
+                    { "targets": 10, "visible": true, "searchable": true },
+                    { "targets": 11, "visible": true, "searchable": true },
+                    { "targets": 12, "visible": true, "searchable": true },
+                    { "targets": 13, "visible": true, "searchable": true },
+                    { "targets": 14, "visible": true, "searchable": true },
+                    { "targets": 15, "visible": true, "searchable": true },
+                    { "targets": 16, "visible": true, "searchable": true },
+                    { "targets": 17, "visible": true, "searchable": true },
+                    { "targets": 18, "visible": true, "searchable": true },
+                    { "targets": 19, "visible": true, "searchable": true,
                         render: function (data, type, row) {
                             return type === 'export' ?
                                     getLinkValue(row[19]) :
                                     data;
                         }
                     },
-                    { "targets": 21, "visible": false, "searchable": true }
+                    { "targets": 20, "visible": false, "searchable": true },
+                    { "targets": 21, "visible": true, "searchable": true }
                 ],
                 buttons: [
                     {
