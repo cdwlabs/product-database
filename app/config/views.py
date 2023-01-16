@@ -197,14 +197,12 @@ def change_configuration(request):
     }
     return render(request, "config/change_configuration.html", context=context)
 
-
+@login_required()
+@permission_required('is_superuser', raise_exception=True)
 def server_messages_list(request):
     """
     show the server message log
     """
-    if login_required_if_login_only_mode(request):
-        return redirect('%s?next=%s' % (settings.LOGIN_URL, request.path))
-
     # by default, view only the recent 30 messages
     context = {
         "recent_events": NotificationMessage.objects.all().order_by("-created")[:30]
@@ -213,13 +211,12 @@ def server_messages_list(request):
     return render(request, "config/notification-list.html", context=context)
 
 
+@login_required()
+@permission_required('is_superuser', raise_exception=True)
 def server_message_detail(request, message_id):
     """
     show a detailed server message
     """
-    if login_required_if_login_only_mode(request):
-        return redirect('%s?next=%s' % (settings.LOGIN_URL, request.path))
-
     try:
         context = {
             "message": NotificationMessage.objects.get(id=message_id)

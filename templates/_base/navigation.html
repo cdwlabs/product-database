@@ -28,12 +28,14 @@
                                     All Products
                                 </a>
                             </li>
+                            <!-- Commented for CAI-45
                             <li role="presentation">
                                 <a href="{% url 'productdb:list-product_groups' %}" id="nav_browse_all_product_groups">
                                     <i class="fa fa-search"></i>&nbsp;&nbsp;
                                     All Product Groups
                                 </a>
                             </li>
+                            -->
                             <li class="divider"></li>
                             <li role="presentation">
                                 <a href="{% url 'productdb:browse_vendor_products' %}" id="nav_browse_all_vendor_products">
@@ -41,6 +43,7 @@
                                     Products By Vendor
                                 </a>
                             </li>
+                            <!-- Commented for CAI-45
                             <li role="presentation">
                                 <a href="{% url 'productdb:list-product_lists' %}" id="nav_browse_all_product_lists">
                                     <i class="fa fa-list-ul"></i>&nbsp;&nbsp;
@@ -53,6 +56,8 @@
                                     All Product Checks
                                 </a>
                             </li>
+                            -->
+                            {% if user.is_superuser %}
                             <li class="divider"></li>
                             <li>
                                 <a href="{% url 'productdb_config:notification-list' %}">
@@ -60,6 +65,7 @@
                                     Recent Notifications
                                 </a>
                             </li>
+                            {% endif %}
                         </ul>
                     </li>
                     <li role="presentation">
